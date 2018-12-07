@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotlinReadTempSensor_v2</string>
+    <string name="TemperatureFinalString">25\u00B0</string>
+    <string name="ConnectWifiString">Read sensors</string>
+    <string name="DisconnectWifiString">Stop</string>
+    <string name="ConnectionStatusString">Not connected</string>
+    <string name="DataOutputString">Sensors data:\n</string>
+</resources>

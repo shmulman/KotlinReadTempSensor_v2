@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/Temperature_Final"
+            android:text="@string/TemperatureFinalString"
+            android:textSize="130sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+    <Button
+            android:id="@+id/ConnectWifi"
+            android:text="@string/ConnectWifiString"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Temperature_Final"
+    />
+
+    <TextView
+            android:id="@+id/ConnectionStatus"
+            android:text="@string/ConnectionStatusString"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:fadeScrollbars="false"
+            android:layout_below="@id/ConnectWifi"
+    />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ConnectionStatus">
+        <TextView
+                android:id="@+id/DataOutput"
+                android:text="@string/DataOutputString"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars = "vertical"
+                android:fadeScrollbars="false"
+        />
+    </ScrollView>
+
+</RelativeLayout>
